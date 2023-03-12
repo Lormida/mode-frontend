@@ -2,6 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".",
     "module": "ESNext",
+    "sourceType": "module",
+    "allowImportExportEverywhere": true,
     "target": "es2017",
     "lib": ["DOM", "ESNext"],
     "strict": true,
