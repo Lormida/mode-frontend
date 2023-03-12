@@ -1,0 +1,51 @@
+{
+  "name": "vue-project",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint -c ./.eslintrc.js \"**/*.{js,ts,vue}\" --ignore-path .eslintignore .",
+    "lint:fix": "eslint -c ./.eslintrc.js \"**/*.{js,ts,vue}\" --ignore-path .eslintignore . --fix",
+    "prettier": "prettier -w -u .",
+    "test": "vitest --run",
+    "coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@meforma/vue-toaster": "^1.3.0",
+    "moment": "^2.29.1",
+    "vue": "latest"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vitest/coverage-c8": "^0.29.2",
+    "@vue/test-utils": "^2.0.0",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.9.0",
+    "husky": "^8.0.0",
+    "jsdom": "latest",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.3.2",
+    "validate-branch-name": "^1.3.0",
+    "vite": "latest",
+    "vitest": "latest"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[vue]": {
+    "editor.formatOnSave": true
+  },
+  "lint-staged": {
+    "*": [
+      "prettier -w -u .",
+      "eslint -c ./.eslintrc.js \"**/*.{js,ts,vue}\" --ignore-path .eslintignore ."
+    ]
+  }
+}
