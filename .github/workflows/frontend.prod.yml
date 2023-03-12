@@ -52,5 +52,3 @@ jobs:
           vercel-args: '--prod' #Optional
           vercel-org-id: fxTWh9kHrfV9hIZepvP3qzXk #Required
           vercel-project-id: prj_9tWdiRYSLTbk3NfQBiCq6ZrSWmsH #Required
-    outputs:
-      preview-url: ${{ steps.vercel-deployment.outputs.preview-url }}
