@@ -33,4 +33,5 @@ jobs:
         with:
           vercel-token: Ae6UkAZsUZ6xDT2dcdG2eB5e # Required
           vercel-org-id: fxTWh9kHrfV9hIZepvP3qzXk #Required
+          vercel-args: '--prod' #Optional
           vercel-project-id: prj_9tWdiRYSLTbk3NfQBiCq6ZrSWmsH #Required
